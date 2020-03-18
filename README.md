@@ -1,4 +1,4 @@
-![](https://github.com/projectcontour/contour/blob/master/contour.png "Contour")
+[![](https://github.com/projectcontour/contour/blob/master/contour.png "Contour")](http://projectcontour.io)
 
 # Community
 
