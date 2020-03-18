@@ -1,3 +1,5 @@
+![](https://github.com/projectcontour/contour/blob/master/contour.png "Contour")
+
 # Community
 
 This is a place for Contour community related material. You can find information on the project governance, community meetings, and a list of all the project maintainers.
