@@ -4,7 +4,7 @@ This document defines the project governance for Contour.
 
 ## Overview
 
-**Contour**, a Cloud Native Computing Foundation (CNCF) project, is committed to building an open, inclusive, productive and self-governing open source community focused on building a high-quality and high performance ingress controller for Kubernetes. The community is governed by this document with the goal of defining how community should work together to achieve this goal.
+**Contour**, an open source project, is committed to building an open, inclusive, productive and self-governing open source community focused on building a high-quality and high performance ingress controller for Kubernetes. The community is governed by this document with the goal of defining how community should work together to achieve this goal.
 
 ## Code Repositories
 
