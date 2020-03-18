@@ -13,7 +13,7 @@ describes governance guidelines and maintainer responsibilities.
 | Michael Michael |[michmike](https://github.com/michmike)| [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
-* Dave Cheney, [davecheney](https://github.com/davecheney)
+* Dave Cheney ([davecheney](https://github.com/davecheney))
 
 ## Contour Core Contributors & Stakeholders
 
