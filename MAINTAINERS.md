@@ -22,6 +22,7 @@ describes governance guidelines and maintainer responsibilities.
 | Technical Lead | Nick Young (youngnick) |
 | Kubernetes Networking Liaison | Nick Young (youngnick), James Peach (jpeach) |
 | Multi-Cluster Ingress | Steve Sloka (stevesloka) |
+| ir2proxy | Nick Young (youngnick) | 
 | Test Infrastructure | James Peach (jpeach) |
 | Community Management | Jonas Rosland (jonasrosland) |
 | Product Management | Michael Michael (michmike) |
