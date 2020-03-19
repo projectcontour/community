@@ -77,6 +77,8 @@ The maximum rate of change is limited by Contour throttling the Envoy update rat
 
 To the best of my knowledge, Contour has not been tested by scaling the numbers of Envoy clients. Since Contour can be deployed in an active-active configuration, more Contour instances may be needed for large clusters that have a lot of Envoy processes.
 
+You can find additional information on Envoy and Contour resource limits [here](https://projectcontour.io/guides/resource-limits/)
+
 ## Code size breakdown
 
 The following table shows the breakdown of the code in the Contour repository, reported by [scc](https://github.com/boyter/scc).  This includes Contour itself, the documentation (multiple versioned copies), deployment YAML and tooling scripts.
