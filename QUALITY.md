@@ -1,12 +1,12 @@
 # Contour Quality assessment
 
-## Unit testing
+## Unit testing and Code Coverage
 
-Unit testing is the primary mechanism for ensuring Contour code and product quality. Unit tests generally fall into two categories - internal API package tests, and end-to-end feature tests.
+Unit testing is the primary mechanism for ensuring Contour code and product quality. Unit tests generally fall into two categories:
+- Internal API package tests
+- End-to-end feature tests.
 
-Internal API package tests are typical unit tests that validate the API of internal code packages.
-
-End-to-end feature tests mock the complete internal workflow from receiving Kubernetes events to emitting Envoy configuration.
+Internal API package tests are typical unit tests that validate the API of internal code packages. End-to-end feature tests mock the complete internal workflow from receiving Kubernetes events to emitting Envoy configuration.
 
 Total code coverage from the full test suite hovers around 78%, per [coverage metrics](https://codecov.io/gh/projectcontour/contour).
 
@@ -21,13 +21,13 @@ As noted in the CI section, CI checks that Contour can be successfully installed
 
 Contour has no automated integration tests. This is being worked on as a separate test harness. Additionally, when the Kubernetes SIG-NETWORK Ingress conformance tests are available, the Contour project will integrate them into the CI pipeline.
 
-At release time, a collection of integration tests is performed manually [#2223](https://github.com/projectcontour/contour/issues/2223).
+At release time, a collection of integration tests is performed manually as per [#2223](https://github.com/projectcontour/contour/issues/2223).
 
 ## Continuous Integration
 
 The Contour project run checks on every PR to ensure that the master branch is always releasable.
 [Travis](https://travis-ci.org/github/projectcontour/contour)
-is the current CI host, but the project plans to migrate to a different provider in the near future [#2200](https://travis-ci.org/github/projectcontour/contour).
+is the current CI host, but the project plans to migrate to a different provider in the near future as per [#2200](https://github.com/projectcontour/contour/issues/2200).
 
 Contour runs 5 CI jobs:
 
@@ -46,10 +46,9 @@ spell checking and custom checks for CLI argument help.
 
 ## Releasing
 
-Contour aims to release point updates monthly. Now that the HTTPProxy API is marked "v1" and Contour's version is > 1.0, updates are not allowed to break compatibility with previous releases.
+Contour aims to release point updates monthly. Now that the HTTPProxy API is marked "v1" and Contour's version is > 1.0, updates are not allowed to break compatibility with previous releases. You can learn more about the Contour release process [here](https://github.com/projectcontour/contour/blob/master/RELEASES.md).
 
-The release process consists of a set of [documented](https://projectcontour.io/resources/release-process/).
-manual steps.
+The release process consists of a set of [documented](https://projectcontour.io/resources/release-process/) manual steps.
 
 The main release artifact is a Docker image that is published to [DockerHub](https://hub.docker.com/r/projectcontour/contour).
 Secondary release artifacts are
