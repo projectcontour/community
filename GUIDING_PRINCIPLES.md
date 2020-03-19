@@ -10,6 +10,10 @@ Contour operates under the guiding principles described below. The Committee is 
 
 The vision of the Contour project is to deliver a high performing, multitenant, ingress controller for cloud native workloads. We accomplish this by providing the control plane for the Envoy edge and service proxy.​ Success metrics include gaining popularity and widespread adoption.
 
+# Philosophy
+
+The [Contour Philosophy Document](https://projectcontour.io/resources/philosophy/) gives guidance and context to new and existing users on how the Contour community approaches decision making around issues and feature requests
+
 # Values
 
 Contour is driven by high technical standards, and these must be maintained. It is also important to take into account that multiple humans are participating in the project, and we must ensure that we all treat each other well. In this respect, we will honor the following values:
