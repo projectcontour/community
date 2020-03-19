@@ -3,9 +3,8 @@ We've made our best effort to survey the ingress controller landscape and compar
 
 If you find something outdated or outright erroneous, please submit a PR and we'll fix it right away.
 
-Table updated on 3/6/2020 against Contour 1.2.1
+Table updated on 3/19/2020 against Contour 1.2.1
 
-✓✗
 | Feature                                                | Contour                                  | NGINX Ingress Controller         | Traefik                               | Istio Ingress                            | Ambassador                                 |
 | -------------:                                         | :-------------------------------------:  | :------------------------------: | :-----------------------------------: | :--------------------------------------: | :----------------------------------------: |
 | License                                                | Apache 2.0                               | Apache 2.0                       | MIT                                   | Apache 2.0                               | Apache 2.0                                 |
