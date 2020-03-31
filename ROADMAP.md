@@ -2,7 +2,7 @@
 
 ### About this document
 
-This document provides a link to the [Contour Project board](https://github.com/projectcontour/contour#workspaces/contour-5bc5116124028a7e4bf2ef81/board?repos=108462822) that serves as the up to date description of items that are in the Contour release pipeline. The board has separate swim lanes for releases and prioritized backlogs. Most items are gathered from the community or include a feedback loop with the community. This should serve as a reference point for Contour users and contributors to understand where the project is heading, and help determine if a contribution could be conflicting with a longer term plan. You may need to install the ZenHub browser plugin for this link to be visible. 
+This document provides a link to the [Contour Project board](https://github.com/orgs/projectcontour/projects/2) that serves as the up to date description of items that are in the Contour release pipeline. The board has separate swim lanes for releases and prioritized backlogs. Most items are gathered from the community or include a feedback loop with the community. This should serve as a reference point for Contour users and contributors to understand where the project is heading, and help determine if a contribution could be conflicting with a longer term plan. 
 
 ### How to help?
 
