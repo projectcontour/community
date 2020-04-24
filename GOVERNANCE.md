@@ -64,22 +64,22 @@ interested in implementing the proposal should be either deeply engaged in the
 proposal process or be an author of the proposal.
 
 The proposal should be documented as a separated markdown file pushed to the root of the 
-`proposals` folder in the [community](https://github.com/ProjectContour/community)
+`design` folder in the [Contour](https://github.com/projectcontour/contour/tree/master/design)
 repository via PR. The name of the file should follow the name pattern `<short
-meaningful words joined by '-'>_proposal.md`, e.g:
-`clear-old-tags-with-policies_proposal.md`.
+meaningful words joined by '-'>_design.md`, e.g:
+`listener-design.md`.
 
-Use the [Proposal Template](proposals/TEMPLATE.md) as a starting point.
+Use the [Proposal Template](https://github.com/projectcontour/contour/blob/master/design/design-document-tmpl.md) as a starting point.
 
 ### Proposal Lifecycle
 
 The proposal PR can be marked with different status labels to represent the
 status of the proposal:
 
-* **New**: Proposal is just created.
+* **Draft**: Proposal is just created.
 * **Reviewing**: Proposal is under review and discussion.
-* **Accepted**: Proposal is reviewed and accepted (either by consensus or vote).
-* **Rejected**: Proposal is reviewed and rejected (either by consensus or vote).
+* **Accepted**: Proposal has been reviewed and is accepted (either by consensus or through a vote).
+* **Declined**: Proposal has been reviewed and was rejected (either by consensus or through a vote).
 
 ## Lazy Consensus
 
