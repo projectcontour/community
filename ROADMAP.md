@@ -28,6 +28,8 @@ Please take the timelines & dates as proposals and goals. Priorities and require
 |Deployment|Contour Helm Chart|October 2020|
 |Service APIs|Introduce support for upstream Service APIs|Long running (dependent on networking working group). Potentially an alpha release 3 months after Kubernetes v1.20|
 |New Use Cases|UDP Support|December 2020|
-|General|Self Service Capabilities in Contour|December 2020|
+|Infrastructure|xDS v3 upgrade|December 2020|
+|Infrastructure|Incorporate Envoy go-control-plane to modernize xDS|December 2020|
+|General|Self Service Capabilities in Contour|March 2021|
 
 
