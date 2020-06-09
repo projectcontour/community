@@ -21,13 +21,14 @@ Please take the timelines & dates as proposals and goals. Priorities and require
 |--|--|--|
 |Observability|Additional HTTPProxy Status information|August 2020|
 |Security|Authentication support for services backed by Contour|August 2020|
+|Compatibility|Implement Kubernetes Ingress V1 specification (requires v1.16)|August 2020|
 |Extensibility|Expose more Envoy configuration knobs|October 2020|
 |Performance|Rate limiting support|October 2020|
 |Observability|Support Access Log Service|October 2020|
 |General|Wildcard Path Matching|October 2020|
 |Deployment|Contour Helm Chart|October 2020|
 |Service APIs|Introduce support for upstream Service APIs|Long running (dependent on networking working group). Potentially an alpha release 3 months after Kubernetes v1.20|
-|New Use Cases|UDP Support|December 2020|
+|New Use Case|UDP Support|December 2020|
 |Infrastructure|xDS v3 upgrade|December 2020|
 |Infrastructure|Incorporate Envoy go-control-plane to modernize xDS|December 2020|
 |General|Self Service Capabilities in Contour|March 2021|
