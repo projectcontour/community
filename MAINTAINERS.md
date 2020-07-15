@@ -11,6 +11,7 @@ describes governance guidelines and maintainer responsibilities.
 | Steve Sloka | [stevesloka](https://github.com/stevesloka) | [VMware](https://www.github.com/vmware/) |
 | James Peach | [jpeach](https://github.com/jpeach) | [VMware](https://www.github.com/vmware/) |
 | Michael Michael |[michmike](https://github.com/michmike)| [VMware](https://www.github.com/vmware/) |
+| Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
 * Dave Cheney ([davecheney](https://github.com/davecheney))
