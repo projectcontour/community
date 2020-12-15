@@ -10,10 +10,11 @@ describes governance guidelines and maintainer responsibilities.
 | Nick Young | [youngnick](https://github.com/youngnick) | [VMware](https://www.github.com/vmware/) |
 | Steve Sloka | [stevesloka](https://github.com/stevesloka) | [VMware](https://www.github.com/vmware/) |
 | James Peach | [jpeach](https://github.com/jpeach) | [VMware](https://www.github.com/vmware/) |
-| Michael Michael |[michmike](https://github.com/michmike)| [VMware](https://www.github.com/vmware/) |
 | Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
+| Alex Xu |[xaleeks](https://github.com/xaleeks)| [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
+* Michael Michael([michmike](https://www.github.com/michmike/))
 * Dave Cheney ([davecheney](https://github.com/davecheney))
 
 ## Contour Core Contributors & Stakeholders
@@ -26,4 +27,4 @@ describes governance guidelines and maintainer responsibilities.
 | ir2proxy | Nick Young (youngnick) | 
 | Test Infrastructure | James Peach (jpeach) |
 | Community Management | Jonas Rosland (jonasrosland) |
-| Product Management | Michael Michael (michmike) |
+| Product Management | Alex Xu (xaleeks) |
