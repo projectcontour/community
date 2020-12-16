@@ -14,7 +14,7 @@ describes governance guidelines and maintainer responsibilities.
 | Alex Xu |[xaleeks](https://github.com/xaleeks)| [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
-* Michael Michael([michmike](https://www.github.com/michmike/))
+* Michael Michael ([michmike](https://www.github.com/michmike/))
 * Dave Cheney ([davecheney](https://github.com/davecheney))
 
 ## Contour Core Contributors & Stakeholders
