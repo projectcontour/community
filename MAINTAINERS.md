@@ -9,13 +9,13 @@ describes governance guidelines and maintainer responsibilities.
 | --------------- | --------- | ----------- |
 | Nick Young | [youngnick](https://github.com/youngnick) | [VMware](https://www.github.com/vmware/) |
 | Steve Sloka | [stevesloka](https://github.com/stevesloka) | [VMware](https://www.github.com/vmware/) |
-| James Peach | [jpeach](https://github.com/jpeach) | [VMware](https://www.github.com/vmware/) |
 | Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
 | Alex Xu |[xaleeks](https://github.com/xaleeks)| [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
 * Michael Michael ([michmike](https://www.github.com/michmike/))
 * Dave Cheney ([davecheney](https://github.com/davecheney))
+* James Peach ([jpeach](https://github.com/jpeach))
 
 ## Contour Core Contributors & Stakeholders
 
