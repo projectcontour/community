@@ -11,7 +11,8 @@ describes governance guidelines and maintainer responsibilities.
 | Steve Sloka | [stevesloka](https://github.com/stevesloka) | [VMware](https://www.github.com/vmware/) |
 | Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
 | Alex Xu |[xaleeks](https://github.com/xaleeks)| [VMware](https://www.github.com/vmware/) |
-| Daneyon Hansen | [danehans](https://github.com/daneyon)| [RedHat](https://github.com/RedHatOfficial) |
+| Daneyon Hansen | [danehans](https://github.com/danehans)| [RedHat](https://github.com/RedHatOfficial) |
+| Sunjay Bhatia | [sunjayBhatia](https://github.com/sunjayBhatia)| [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
 * Michael Michael ([michmike](https://www.github.com/michmike/))
