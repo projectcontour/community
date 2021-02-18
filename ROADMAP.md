@@ -15,22 +15,38 @@ Please open an issue to track any initiative on the roadmap of Contour (Usually 
 The following table includes the current roadmap for Contour. If you have any questions or would like to contribute to Contour, please attend a [community meeting](https://projectcontour.io/community/) to discuss with our team. If you don't know where to start, we are always looking for contributors that will help us reduce technical, automation, and documentation debt.
 Please take the timelines & dates as proposals and goals. Priorities and requirements change based on community feedback, roadblocks encountered, community contributions, etc. If you depend on a specific item, we encourage you to attend community meetings to get updated status information, or help us deliver that feature by contributing to Contour.
 
-`Last Updated: August 2020`
+`Last Updated: February 2021`
+
+|Theme|Description|Timeline|Issue|Notes|
+|--|--|--|--|--|
+|Performance|Rate limiting support|February 2021|[projectcontour/contour#370](https://github.com/projectcontour/contour/issues/370)| Local rate limiting support arrived in 1.12 in January 2021, global rate limiting support is due in 1.13, February 2021.|
+|Compatibility|Implement Kubernetes Ingress V1 specification (requires v1.16)|March 2021|[projectcontour/contour#2139](https://github.com/projectcontour/contour/issues/2139)||
+|General|Wildcard Path Matching|March 2021|[projectcontour/contour#2138](https://github.com/projectcontour/contour/issues/2138)|A limited form of this is required for both Ingress and Gateway-APIs.|
+|Observability|Support Access Log Service|April 2021|[projectcontour/contour#1691](https://github.com/projectcontour/contour/issues/1691)||
+|Gateway APIs|Introduce support for [upstream Gateway APIs](https://github.com/kubernetes-sigs/gateway-api)|April 2021|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)||
+|Operational|Contour Operator Beta|April 2021|[projectcontour/contour-operator#205](https://github.com/projectcontour/contour-operator/issues/205)||
+|General|Self Service Capabilities in Contour|May 2021|[projectcontour/contour#2206](https://github.com/projectcontour/contour/issues/2206) mainly, with some others|It seems likely that some of these requests will be introduced by the Gateway APIs.|
+|Infrastructure|Incorporate Envoy go-control-plane to modernize xDS|June 2021|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)||
+|Operational|Harden contour-authserver to provide a simple auth option|Unknown|[projectcontour/contour-authserver#14](https://github.com/projectcontour/contour-authserver/issues/14)|Contour-authserver is a small utility that translates between Envoy ext_auth gRPC and other protocols, this is to make it no longer experimental|
+|Security|Add OIDC support to contour-authserver|Unknown|[projectcontour/contour-authserver#13](https://github.com/projectcontour/contour-authserver/pull/13)||
+|Operational|Reevaluate container image storage|Unknown|[projectcontour/contour#3366](https://github.com/projectcontour/contour/issues/3366)|With the rate-limiting Dockerhub is applying, we need to decide if we will stay there or move to another container host.|
+|Load Balancing|List of hash_policy for HTTPProxy|Unknown|[projectcontour/contour#3044](https://github.com/projectcontour/contour/issues/3044)||
+|Security|IP Block list|Unknown|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971)|Not sure if people want this one, will fill out our comparison with other ingress controllers.|
+|Observability|Tracing support|Unknown|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)||
+|Operational|Configurable circuit breaking|Unknown|[projectcontour/contour#1192](https://github.com/projectcontour/contour/issues/1192)||
+|Tech Debt|Properly handle Envoy NACK messages|Unknown|[projectcontour/contour#1176](https://github.com/projectcontour/contour/issues/1176)||
+|Testing|Improve Contour testing|Unknown|[projectcontour/contour#3312](https://github.com/projectcontour/contour/issues/3312)||
+|New Use Case|UDP Support|Currently Won't Do|[projectcontour/contour#1248](https://github.com/projectcontour/contour/issues/1248)|Contour is currently focussed on Layer 7 HTTP Ingress, and supports Layer 4 only in service of that goal. If you have use cases for UDP, please add them to the linked issue.|
+|New Protocol|HTTP/3 or QUIC support|Unknown|[projectcontour/contour/#2582](https://github.com/projectcontour/contour/issues/2582)||
+
+
+## Completed Roadmap items
 
 |Theme|Description|Timeline|
 |--|--|--|
 |Observability|Additional HTTPProxy Status information|October 2020|
 |Security|Authentication support for services backed by Contour|October 2020|
-|Compatibility|Implement Kubernetes Ingress V1 specification (requires v1.16)|October 2020|
-|Infrastructure|xDS v3 upgrade|December 2020 (must be done by EOY 2020)|
 |Extensibility|Expose more Envoy configuration knobs|December 2020|
-|Performance|Rate limiting support|December 2020|
-|Observability|Support Access Log Service|December 2020|
-|General|Wildcard Path Matching|December 2020|
+|Infrastructure|xDS v3 upgrade|December 2020 (must be done by EOY 2020)|
 |Deployment|Contour Helm Chart|December 2020|
-|Service APIs|Introduce support for upstream Service APIs|Long running (dependent on networking working group). Potentially an alpha release 3 months after Kubernetes v1.20|
-|New Use Case|UDP Support|February 2021|
-|Infrastructure|Incorporate Envoy go-control-plane to modernize xDS|February 2021|
-|General|Self Service Capabilities in Contour|May 2021|
-
-
+|Operational|Contour Operator Alpha|December 2020|
