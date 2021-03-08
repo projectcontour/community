@@ -21,9 +21,9 @@ Please take the timelines & dates as proposals and goals. Priorities and require
 |--|--|--|--|--|
 |Performance|Rate limiting support|February 2021|[projectcontour/contour#370](https://github.com/projectcontour/contour/issues/370)| Local rate limiting support arrived in 1.12 in January 2021, global rate limiting support is due in 1.13, February 2021.|
 |Compatibility|Implement Kubernetes Ingress V1 specification (requires v1.16)|March 2021|[projectcontour/contour#2139](https://github.com/projectcontour/contour/issues/2139)||
-|General|Wildcard Path Matching|March 2021|[projectcontour/contour#2138](https://github.com/projectcontour/contour/issues/2138)|A limited form of this is required for both Ingress and Gateway-APIs.|
+|General|Wildcard Hostname Matching|March 2021|[projectcontour/contour#2138](https://github.com/projectcontour/contour/issues/2138)|A limited form of this is required for both Ingress and Gateway-APIs.|
 |Observability|Support Access Log Service|April 2021|[projectcontour/contour#1691](https://github.com/projectcontour/contour/issues/1691)||
-|Gateway APIs|Introduce support for [upstream Gateway APIs](https://github.com/kubernetes-sigs/gateway-api)|April 2021|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)||
+|Gateway APIs|Introduce support for [upstream Gateway APIs](https://github.com/kubernetes-sigs/gateway-api)|April 2021|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)|Contour will only supprt HTTPRoute and TLSRoute, the Layer 7 route objects. No support planned for TCPRoute and UDPRoute at this time.|
 |Operational|Contour Operator Beta|April 2021|[projectcontour/contour-operator#205](https://github.com/projectcontour/contour-operator/issues/205)||
 |General|Self Service Capabilities in Contour|May 2021|[projectcontour/contour#2206](https://github.com/projectcontour/contour/issues/2206) mainly, with some others|It seems likely that some of these requests will be introduced by the Gateway APIs.|
 |Infrastructure|Incorporate Envoy go-control-plane to modernize xDS|June 2021|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)||
@@ -40,10 +40,13 @@ Please take the timelines & dates as proposals and goals. Priorities and require
 |New Protocol|HTTP/3 or QUIC support|Unknown|[projectcontour/contour/#2582](https://github.com/projectcontour/contour/issues/2582)||
 
 
+
+
 ## Completed Roadmap items
 
-|Theme|Description|Timeline|
-|--|--|--|
+|Theme|Description|Timeline|Issue|Notes|
+|--|--|--|--|--|
+|Performance|Rate limiting support|February 2021|[projectcontour/contour#370](https://github.com/projectcontour/contour/issues/370)| Local rate limiting support arrived in 1.12 in January 2021, global rate limiting support arrived in 1.13, February 2021.|
 |Observability|Additional HTTPProxy Status information|October 2020|
 |Security|Authentication support for services backed by Contour|October 2020|
 |Extensibility|Expose more Envoy configuration knobs|December 2020|
