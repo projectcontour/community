@@ -24,9 +24,9 @@ describes governance guidelines and maintainer responsibilities.
 | Contour Feature Area | Lead |
 | ----------------------------- | :---------------------: |
 | Technical Lead | Nick Young (youngnick) |
-| Kubernetes Networking Liaison | Nick Young (youngnick), James Peach (jpeach) |
+| Kubernetes Networking Liaison | Nick Young (youngnick) |
 | Multi-Cluster Ingress | Steve Sloka (stevesloka) |
 | ir2proxy | Nick Young (youngnick) | 
-| Test Infrastructure | James Peach (jpeach) |
-| Community Management | Jonas Rosland (jonasrosland) |
+| Test Infrastructure | Steve Kriss (skriss), Sunjay Bhatia (sunjayBhatia) |
+| Community Management | Orlin Vasilev (OrlinVasilev) |
 | Product Management | Alex Xu (xaleeks) |
