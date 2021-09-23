@@ -18,6 +18,7 @@ describes governance guidelines and maintainer responsibilities.
 * Michael Michael ([michmike](https://www.github.com/michmike/))
 * Dave Cheney ([davecheney](https://github.com/davecheney))
 * James Peach ([jpeach](https://github.com/jpeach))
+* Daneyon Hansen ([danehans](https://github.com/danehans))
 
 ## Contour Core Contributors & Stakeholders
 
