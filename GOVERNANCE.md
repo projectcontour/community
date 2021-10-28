@@ -8,20 +8,27 @@ This document defines the project governance for Contour.
 
 ## Code Repositories
 
-The following code repositories are governed by Contour community and
-maintained under the `ProjectContour` namespace.
+All the code repositories owned by the Project Contour Github Organization are
+governed by Contour community and maintained under the `ProjectContour` namespace.
+The following repos are the most noteworthy:
 
 * **[Contour](https://github.com/ProjectContour/Contour):** Main Contour codebase.
-* **[Gimbal](https://github.com/ProjectContour/Gimbal):** Gimbal is an ingress load balancing platform capable of routing traffic to multiple Kubernetes and OpenStack clusters
 * **[community](https://github.com/ProjectContour/community):** Used to store community-related material–e.g., proposals, presentation slides, governance documents, community meeting minutes, etc.
+* **[contour-operator](https://github.com/ProjectContour/Contour):** The Contour
+Operator is a tool for installing and managing Contour.
 * **[ir2proxy ](https://github.com/ProjectContour/ir2proxy):** ir2proxy is a tool to convert Contour's IngressRoute resources to HTTPProxy resources.
 
 
 ## Community Roles
-
+All of the below roles share the responsibility to do their best to 
 * **Users:** Members that engage with the Contour community via any medium (Slack, GitHub, mailing lists, etc.).
-* **Contributors:** Regular contributions to projects (documentation, code reviews, responding to issues, participation in proposal discussions, contributing code, etc.). 
-* **Maintainers**: The Contour project leaders. They are responsible for the overall health and direction of the project; final reviewers of PRs and responsible for releases. Some Maintainers are responsible for one or more components within a project, acting as technical leads for that component. Maintainers are expected to contribute code and documentation, review PRs including ensuring quality of code, triage issues, proactively fix bugs, and perform maintenance tasks for these components.
+* **Contributors:** Regular contributions to projects (documentation, code reviews, responding to issues, participation in proposal discussions, contributing code, etc.). For the Contour project and all its associated repositories, becoming a *Contributor* means becoming a *Github Organization Member*, with the ability to label issues and PRs. 
+* **Maintainers**: The Contour project leaders.
+They are responsible for the overall health and direction of the project; final reviewers of PRs and responsible for releases.
+Some Maintainers are responsible for one or more components within a project, acting as technical leads for that component.
+Maintainers are expected to do some or all of the below:
+  - contribute code and/or documentation, review PRs including ensuring quality of code, triage issues, proactively fix bugs, and perform maintenance tasks for these components,
+  - or perform other equivalent non-code contributions, such as managing the Contour community, promoting and marketing Contour, encouraging new contributors, or helping promote contributors to become maintainers.
 
 ### Maintainers
 
