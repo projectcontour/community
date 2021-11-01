@@ -14,13 +14,10 @@ The following repos are the most noteworthy:
 
 * **[Contour](https://github.com/ProjectContour/Contour):** Main Contour codebase.
 * **[community](https://github.com/ProjectContour/community):** Used to store community-related material–e.g., proposals, presentation slides, governance documents, community meeting minutes, etc.
-* **[contour-operator](https://github.com/ProjectContour/Contour):** The Contour
-Operator is a tool for installing and managing Contour.
-* **[ir2proxy ](https://github.com/ProjectContour/ir2proxy):** ir2proxy is a tool to convert Contour's IngressRoute resources to HTTPProxy resources.
-
+* **[contour-operator](https://github.com/ProjectContour/Contour):** The Contour Operator is a tool for installing and managing Contour.
 
 ## Community Roles
-All of the below roles share the responsibility to do their best to 
+All of the below roles share the responsibility to abide by the Code of Conduct and work together towards making the project better.
 * **Users:** Members that engage with the Contour community via any medium (Slack, GitHub, mailing lists, etc.).
 * **Contributors:** Regular contributions to projects (documentation, code reviews, responding to issues, participation in proposal discussions, contributing code, etc.). For the Contour project and all its associated repositories, becoming a *Contributor* means becoming a *Github Organization Member*, with the ability to label issues and PRs. 
 * **Maintainers**: The Contour project leaders.
