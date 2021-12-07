@@ -10,7 +10,7 @@ describes governance guidelines and maintainer responsibilities.
 | Nick Young | [youngnick](https://github.com/youngnick) | [VMware](https://www.github.com/vmware/) |
 | Steve Sloka | [stevesloka](https://github.com/stevesloka) | [VMware](https://www.github.com/vmware/) |
 | Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
-| Alex Xu |[xaleeks](https://github.com/xaleeks)| [VMware](https://www.github.com/vmware/) |
+| Alex Xu | [xaleeks](https://github.com/xaleeks) | [VMware](https://www.github.com/vmware/) |
 | Tero Saarni | [tsaarni](https://github.com/tsaarni)| [Ericsson](https://github.com/Ericsson) |
 | Sunjay Bhatia | [sunjayBhatia](https://github.com/sunjayBhatia)| [VMware](https://www.github.com/vmware/) |
 
@@ -19,6 +19,19 @@ describes governance guidelines and maintainer responsibilities.
 * Dave Cheney ([davecheney](https://github.com/davecheney))
 * James Peach ([jpeach](https://github.com/jpeach))
 * Daneyon Hansen ([danehans](https://github.com/danehans))
+
+## SIG Community
+
+| Owner | GitHub ID | Affiliation |
+| --------------- | --------- | ----------- |
+| Orlin Vasilev | [OrlinVasilev](https://github.com/OrlinVasilev) | [VMware](https://www.github.com/vmware/) | 
+| Alex Xu | [xaleeks](https://github.com/xaleeks) | [VMware](https://www.github.com/vmware/) | 
+
+## SIG Docs
+
+| Owner | GitHub ID | Affiliation |
+| --------------- | --------- | ----------- |
+| Orlin Vasilev | [OrlinVasilev](https://github.com/OrlinVasilev) | [VMware](https://www.github.com/vmware/) | 
 
 ## Contour Core Contributors & Stakeholders
 
