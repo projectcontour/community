@@ -33,7 +33,6 @@ Reviewers are able to review code for quality and correctness on some part of a 
 
 * Knowledgeable about the codebase
 * Sponsored by a maintainer
-* With no objections from other maintainer
 * New reviewer must be nominated by an existing maintainer or reviewer or self-nominated and must be elected by a supermajority of existing maintainers
 
 #### Responsibilities and privileges
@@ -52,8 +51,8 @@ New maintainers must be nominated by an existing maintainer and must be elected 
 
 #### Maintainer Expectations
 
-Maintainers have the ability to merge code into the project. Anyone can
-become a Container maintainer (see "Becoming a maintainer" below.)
+Maintainers have the ability to merge code into the project.
+Anyone is eligible to become an maintainer (see [Becoming a maintainer](#Becoming a maintainer) below.)
 
 As such, there are certain expectations for maintainers. Contour maintainers
 are expected to:
@@ -68,6 +67,17 @@ If a maintainer is no longer interested in or cannot perform the duties
 listed above, they should move themselves to emeritus status. If necessary,
 this can also occur through the decision-making process outlined below.
 
+
+#### Becoming a maintainer
+
+* Anyone is eligible to become a Contour maintainer
+* Maintainers should be proficient in Go
+* have relevant domain expertise
+* have the time and ability to meet the maintainer expectations above
+* and demonstrate the ability to work with the existing maintainers and project processes
+
+*New maintainers must be nominated by an existing maintainer and must be elected by a supermajority of existing maintainers. Likewise, maintainers can be removed by a supermajority of the existing maintainers or can resign by notifying one of the maintainers.*
+
 ### SIGs and SIG-owner
 
 SIGs oversee and coordinate the interests and needs of end users and projects in a particular area. By definition, they are long-lived groups that coordinate their work with the maintainers team and are led primarily by recognized experts in the relevant field and supported by other contributors.
@@ -77,17 +87,6 @@ SIGs oversee and coordinate the interests and needs of end users and projects in
 A supermajority is defined as two-thirds of members in the group.
 A supermajority of [Maintainers](#maintainers) is required for certain
 decisions as outlined above. Voting on decisions can happen on the mailing list, GitHub, Slack, email, or via a voting service, when appropriate. Maintainers can either vote "agree, yes, +1", "disagree, no, -1", or "abstain". A vote passes when supermajority is met. An abstain vote equals not voting at all.
-
-
-### Becoming a maintainer
-
-* Anyone can become a Contour maintainer
-* Maintainers should be proficient in Go
-* have relevant domain expertise
-* have the time and ability to meet the maintainer expectations above
-* and demonstrate the ability to work with the existing maintainers and project processes
-
-*New maintainers must be nominated by an existing maintainer and must be elected by a supermajority of existing maintainers. Likewise, maintainers can be removed by a supermajority of the existing maintainers or can resign by notifying one of the maintainers.*
 
 ### Decision Making
 
