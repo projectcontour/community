@@ -52,7 +52,7 @@ New maintainers must be nominated by an existing maintainer and must be elected 
 #### Maintainer Expectations
 
 Maintainers have the ability to merge code into the project.
-Anyone is eligible to become an maintainer (see [Becoming a maintainer](#Becoming a maintainer) below.)
+Anyone is eligible to become an maintainer (see [Becoming a maintainer][] below.)
 
 As such, there are certain expectations for maintainers. Contour maintainers
 are expected to:
