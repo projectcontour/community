@@ -8,24 +8,79 @@ This document defines the project governance for Contour.
 
 ## Code Repositories
 
-The following code repositories are governed by Contour community and
-maintained under the `ProjectContour` namespace.
+All the code repositories owned by the Project Contour GitHub Organization are
+governed by Contour community and maintained under the `ProjectContour` namespace.
+The following repos are the most noteworthy:
 
-* **[Contour](https://github.com/ProjectContour/Contour):** Main Contour codebase.
-* **[Gimbal](https://github.com/ProjectContour/Gimbal):** Gimbal is an ingress load balancing platform capable of routing traffic to multiple Kubernetes and OpenStack clusters
-* **[community](https://github.com/ProjectContour/community):** Used to store community-related material–e.g., proposals, presentation slides, governance documents, community meeting minutes, etc.
-* **[ir2proxy ](https://github.com/ProjectContour/ir2proxy):** ir2proxy is a tool to convert Contour's IngressRoute resources to HTTPProxy resources.
-
+* **[Contour](https://github.com/projectcontour/contour):** Main Contour codebase.
+* **[community](https://github.com/projectcontour/community):** Used to store community-related material–e.g., proposals, presentation slides, governance documents, community meeting minutes, etc.
+* **[contour-operator](https://github.com/projectcontour/contour-operator):** The Contour Operator is a tool for installing and managing Contour.
 
 ## Community Roles
 
+All of the below roles share the responsibility to abide by the Code of Conduct and work together towards making the project better.
+
 * **Users:** Members that engage with the Contour community via any medium (Slack, GitHub, mailing lists, etc.).
 * **Contributors:** Regular contributions to projects (documentation, code reviews, responding to issues, participation in proposal discussions, contributing code, etc.). 
-* **Maintainers**: The Contour project leaders. They are responsible for the overall health and direction of the project; final reviewers of PRs and responsible for releases. Some Maintainers are responsible for one or more components within a project, acting as technical leads for that component. Maintainers are expected to contribute code and documentation, review PRs including ensuring quality of code, triage issues, proactively fix bugs, and perform maintenance tasks for these components.
+* **Reviewer:** Review contributions from other members.
+* **Maintainers**: The Contour project leaders. They are responsible for the overall health and direction of the project; final reviewers of PRs and responsible for releases. 
+* **SIG members/owner**: Members of a specific SIG are responsible for the work within that SIG topic, and SIG owners are responsible for driving the efforts within a SIG.
+
+### Reviewer
+Reviewers are able to review code for quality and correctness on some part of a subproject. They are knowledgeable about both the codebase and software engineering principles.
+
+#### Requirements
+
+* Knowledgeable about the codebase
+* Sponsored by a maintainer
+* New reviewer must be nominated by an existing maintainer or reviewer or self-nominated and must be elected by a supermajority of existing maintainers
+
+#### Responsibilities and privileges
+
+* Code reviewer status may be a precondition to accepting large code contributions
+* Responsible for project quality control via code reviews
+* Focus on code quality and correctness, including testing and factoring
+* May also review for more holistic issues, but not a requirement
+* Expected to be responsive to review requests
+* Assigned PRs to review related to subproject of expertise
+* Assigned test bugs related to subproject of expertise
 
 ### Maintainers
 
 New maintainers must be nominated by an existing maintainer and must be elected by a supermajority of existing maintainers. Likewise, maintainers can be removed by a supermajority of the existing maintainers or can resign by notifying one of the maintainers.
+
+#### Maintainer Expectations
+
+Maintainers have the ability to merge code into the project.
+Anyone is eligible to become an maintainer see Becoming a maintainer below.
+
+As such, there are certain expectations for maintainers. Contour maintainers
+are expected to:
+
+* Review pull requests, triage issues, and fix bugs in their areas of expertise, ensuring that all changes go through the project's code review and integration processes.
+* Monitor cncf-contour-* emails and the Contour Slack, and help out when possible.
+* Rapidly respond to any time-sensitive security release processes.
+
+Some Maintainers are responsible for one or more components within a project, acting as technical leads for that component. Maintainers are expected to contribute code and documentation, review PRs including ensuring quality of code, triage issues, proactively fix bugs, and perform maintenance tasks for these components.
+
+If a maintainer is no longer interested in or cannot perform the duties
+listed above, they should move themselves to emeritus status. If necessary,
+this can also occur through the decision-making process outlined below.
+
+
+#### Becoming a maintainer
+
+* Anyone is eligible to become a Contour maintainer
+* Maintainers should be proficient in Go
+* have relevant domain expertise
+* have the time and ability to meet the maintainer expectations above
+* and demonstrate the ability to work with the existing maintainers and project processes
+
+*New maintainers must be nominated by an existing maintainer and must be elected by a supermajority of existing maintainers. Likewise, maintainers can be removed by a supermajority of the existing maintainers or can resign by notifying one of the maintainers.*
+
+### SIGs and SIG-owner
+
+SIGs oversee and coordinate the interests and needs of end users and projects in a particular area. By definition, they are long-lived groups that coordinate their work with the maintainers team and are led primarily by recognized experts in the relevant field and supported by other contributors.
 
 ### Supermajority
 
@@ -81,7 +136,7 @@ status of the proposal:
 * **Accepted**: Proposal has been reviewed and is accepted (either by consensus or through a vote).
 * **Declined**: Proposal has been reviewed and was rejected (either by consensus or through a vote).
 
-## Lazy Consensus
+### Lazy Consensus
 
 To maintain velocity in a project as busy as Contour, the concept of [Lazy
 Consensus](http://en.osswiki.info/concepts/lazy_consensus) is practiced. Ideas
@@ -110,3 +165,11 @@ Lazy consensus does _not_ apply to the process of:
 ## Updating Governance
 
 All substantive changes in Governance require a supermajority agreement by all maintainers.
+
+
+## Thanks
+
+Many thanks in advance to everyone who contributes their time and effort to making Contour both a successful system as well as a successful community. The strength of our software shines in the strengths of each individual community member.
+Thanks!
+
+**Some content in this document were built(inspired) upon the work in the [Kubernetes](https://github.com/kubernetes/community), [Linkerd](https://github.com/linkerd/linkerd2/blob/main/GOVERNANCE.md), [Helm](https://github.com/helm/community/blob/main/governance) Communities! KUDOs to all of them!**
