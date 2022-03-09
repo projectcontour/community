@@ -33,7 +33,7 @@ describes governance guidelines and maintainer responsibilities.
 | Owner | GitHub ID | Affiliation |
 | --------------- | --------- | ----------- |
 | Orlin Vasilev | [OrlinVasilev](https://github.com/OrlinVasilev) | [VMware](https://www.github.com/vmware/) |
-| Kay ORiordan | [kcoriordan](https://github.com/kcoriordan) | VMware](https://www.github.com/vmware/) |
+| Kay ORiordan | [kcoriordan](https://github.com/kcoriordan) | [VMware](https://www.github.com/vmware/) |
 
 ## Contour Core Contributors & Stakeholders
 
