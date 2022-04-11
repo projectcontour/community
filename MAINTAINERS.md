@@ -8,7 +8,7 @@ describes governance guidelines and maintainer responsibilities.
 | Maintainer | GitHub ID | Affiliation |
 | --------------- | --------- | ----------- |
 | Nick Young | [youngnick](https://github.com/youngnick) | [VMware](https://www.github.com/vmware/) |
-| Steve Sloka | [stevesloka](https://github.com/stevesloka) | [VMware](https://www.github.com/vmware/) |
+| Steve Sloka | [stevesloka](https://github.com/stevesloka) | [Pulumi](https://github.com/pulumi) |
 | Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
 | Alex Xu | [xaleeks](https://github.com/xaleeks) | [VMware](https://www.github.com/vmware/) |
 | Tero Saarni | [tsaarni](https://github.com/tsaarni)| [Ericsson](https://github.com/Ericsson) |
