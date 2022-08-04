@@ -15,27 +15,16 @@ Please open an issue to track any initiative on the roadmap of Contour (Usually 
 The following table includes the current roadmap for Contour. If you have any questions or would like to contribute to Contour, please attend a [community meeting](https://projectcontour.io/community/) to discuss with our team. If you don't know where to start, we are always looking for contributors that will help us reduce technical, automation, and documentation debt.
 Please take the timelines & dates as proposals and goals. Priorities and requirements change based on community feedback, roadblocks encountered, community contributions, etc. If you depend on a specific item, we encourage you to attend community meetings to get updated status information, or help us deliver that feature by contributing to Contour.
 
-`Last Updated: November 2021`
+`Last Updated: August 2022`
 
-|Theme|Description|Timeline|Issue|Notes|
-|--|--|--|--|--|
-|Gateway APIs|Introduce support for [upstream Gateway APIs](https://github.com/kubernetes-sigs/gateway-api)|2021 H2|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)|Contour will only support HTTPRoute and TLSRoute, the Layer 7 route objects. No support planned for TCPRoute and UDPRoute at this time.  Related issue that's on our radar - https://github.com/projectcontour/contour/issues/3367|
-|Infrastructure|Incorporate Envoy go-control-plane to modernize xDS|2021 H2|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)||
-|Operational|Contour with managed Envoys|2022 H1||Contour will automatically manage the Envoy instances in a Contour installation, configured using the new Configuration CRD. Aside from being a useful change in general, this will also allow Contour to move more towards a fully dynamic Gateway API implementation.|
-|Deployment|Contour Operator GA|2022 H2|[projectcontour/contour-operator#205](https://github.com/projectcontour/contour-operator/issues/205)|Bring the Operator to Beta release and then to GA release suitable for production environments. This can't be completed until the managed Envoy work is complete. The Operator will fully support Contour leveraging Gateway API.|
-|Observability|Tracing support|2022 H1|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|This triggered a deeper look at our existing ExtensionService and some possible changes might be needed|
-|Operational|Harden contour-authserver to provide a simple auth option|Unknown|[projectcontour/contour-authserver#14](https://github.com/projectcontour/contour-authserver/issues/14)|Contour-authserver is a small utility that translates between Envoy ext_auth gRPC and other protocols, this is to make it no longer experimental|
-|Observability|Support Access Log Service|Unknown|[projectcontour/contour#1691](https://github.com/projectcontour/contour/issues/1691)||
-|Security|Add OIDC support to contour-authserver|Unknown|[projectcontour/contour-authserver#13](https://github.com/projectcontour/contour-authserver/pull/13)| This work covers adding OIDC support to our external auth server. Note that Contour has committed to also building OIDC support directly into Contour, see the below item.|
-|Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server.|
-|Load Balancing|List of hash_policy for HTTPProxy|Unknown|[projectcontour/contour#3044](https://github.com/projectcontour/contour/issues/3044)||
-|Security|IP Block list|Unknown|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971)|Not sure if people want this one, will fill out our comparison with other ingress controllers.|
-|Operational|Configurable circuit breaking|Unknown|[projectcontour/contour#1192](https://github.com/projectcontour/contour/issues/1192)||
-|Tech Debt|Properly handle Envoy NACK messages|Unknown|[projectcontour/contour#1176](https://github.com/projectcontour/contour/issues/1176)||
-|Testing|Improve Contour testing|Unknown|[projectcontour/contour#3312](https://github.com/projectcontour/contour/issues/3312)||
-|New Use Case|UDP Support|Currently Won't Do|[projectcontour/contour#1248](https://github.com/projectcontour/contour/issues/1248)|Contour is currently focused on Layer 7 HTTP Ingress, and supports Layer 4 only in service of that goal. If you have use cases for UDP, please add them to the linked issue.|
-|New Protocol|HTTP/3 or QUIC support|Unknown|[projectcontour/contour/#2582](https://github.com/projectcontour/contour/issues/2582)||
-
+|Theme|Description|Timeline|Issue|Notes|Will this be ported to Envoy Gateway?|
+|--|--|--|--|--|--|
+|Gateway API|Create a plan for v0.6.0|2022 H2| TBC|Make a plan for how to handle Gateway API v0.6.0 when it's released.|Envoy Gateway will track Gateway releases.|
+|Infrastructure|Replace Contour xDS code with go-control-plane as default|2023 H2|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)|There’s some work left to do, but this should be finished soon.These changes will also make Delta xDS available, which should help with wire transfer times and scalability.|The work we do here is directly used in Envoy Gateway; it only uses go-control-plane.|
+|Observability|Tracing support|Unknown|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|In order to build this support out, Contour’s ExtensionService CRD needs a redesign. The active maintainers will work on driving tracing support in the Gateway API and Envoy Gateway. If any Contour community members wish to pick up this work, the maintainers will help you by explaining the problem and what needs to be done, and then help to shepherd the PR through review.|Envoy Gateway will build this at some point, we need to figure out how to do it in Gateway API.|
+|Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server. We started this work, but the Oauth2 filter in Envoy is still very experimental and needs a lot of work. This work can’t proceed until significant work has been done on the Oauth2 filter.|This is definitely a roadmap item for Envoy Gateway.
+|Security|IP Block list|Unknown|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971)|The team will evaluate when we do this in Contour.|
+|New Use Case|UDP Support|Won't Do|[projectcontour/contour#1248](https://github.com/projectcontour/contour/issues/1248)|Contour is focused on Layer 7 HTTP Ingress, and supports Layer 4 only in service of that goal. Contour will not add UDP support.|
 
 
 
@@ -43,6 +32,11 @@ Please take the timelines & dates as proposals and goals. Priorities and require
 
 |Theme|Description|Timeline|Issue|Notes|
 |--|--|--|--|--|
+|Operational|Contour with managed Envoys|2022 H1||Contour’s Gateway API implementation now allows for the dynamic creation of Envoy Daemonsets or Deployments, this functionality is included there.We were considering making this available outside of Gateway API, but the work involved is too prohibitive.|
+|Gateway APIs|Implement Gateway 0.5.0 API Support|2021 H2|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)|Contour will only support HTTPRoute and TLSRoute, the Layer 7 route objects. No support planned for TCPRoute and UDPRoute at this time.  Related issue that's on our radar - https://github.com/projectcontour/contour/issues/3367|
+|Deployment|Contour Operator GA|Won't do|[projectcontour/contour-operator#205](https://github.com/projectcontour/contour-operator/issues/205)|The Operator will not be moved to GA. It’s now in maintenance mode, and will have minimal updates done to keep it working with new Contour releases until we say otherwise. Once Envoy Gateway is available and ready for use, we strongly encourage Operator users to move to it for your dynamic ingress traffic routing needs.|
+|Operational|Harden contour-authserver to provide a simple auth option|Won't do|[projectcontour/contour-authserver#14](https://github.com/projectcontour/contour-authserver/issues/14)|Contour-authserver is an experimental ext_auth server. We’re going to move this to archived, as we don’t expect further development on it. https://github.com/travisghansen/external-auth-server is a possible alternative.| Envoy Gateway definitely wants to build this, it requires work to build into the Gateway API, then work to implement external auth. Inline auth for Envoy Gateway is a separate issue, that also has a lot of interest there.
+|Load Balancing|List of hash_policy for HTTPProxy|Unknown|[projectcontour/contour#3044](https://github.com/projectcontour/contour/issues/3044)||
 |Operational|Session Affinity by Source IP|2021 H2|[projectcontour/contour#3703](https://github.com/projectcontour/contour/issues/3703)|Implemented in [#4141](https://github.com/projectcontour/contour/pull/4141)|
 |Operational|Re-evaluate container image storage|2021 H2|[projectcontour/contour#3366](https://github.com/projectcontour/contour/issues/3366)|Contour's primary image storage has moved to Github Container Registry (GHCR)|
 |Security|FIPS Compliance|May 2021|
