@@ -2,28 +2,40 @@
 
 ### About this document
 
-This document provides a link to the [Contour Project board](https://github.com/orgs/projectcontour/projects/2) that serves as the up to date description of items that are in the Contour release pipeline. The board has separate swim lanes for releases and prioritized backlogs. Most items are gathered from the community or include a feedback loop with the community. This should serve as a reference point for Contour users and contributors to understand where the project is heading, and help determine if a contribution could be conflicting with a longer term plan. 
+This document provides a link to the [Contour Project board](https://github.com/orgs/projectcontour/projects/4) that serves as the up to date description of items that are in the Contour release pipeline.
+The board tracks the Github milestones for upcoming releases and other issues planned to work on soon.
+Most items are gathered from the community or include a feedback loop with the community.
+This should serve as a reference point for Contour users and contributors to understand where the project is heading, and help determine if a contribution could be conflicting with a longer term plan.
 
 ### How to help?
 
-Discussion on the roadmap can take place in threads under [Issues](https://github.com/ProjectContour/Contour/issues) or in [community meetings](https://github.com/ProjectContour/community/blob/master/MEETING_SCHEDULE.md). Please open and comment on an issue if you want to provide suggestions and feedback to an item in the roadmap. Please review the roadmap to avoid potential duplicated efforts.
+Discussion on the roadmap can take place in threads under [Issues](https://github.com/projectcontour/contour/issues) or in [community meetings](https://github.com/ProjectContour/community/blob/master/MEETING_SCHEDULE.md).
+Please open and comment on an issue if you want to provide suggestions and feedback to an item in the roadmap.
+Please review the roadmap to avoid potential duplicated efforts.
 
 ### How to add an item to the roadmap?
-Please open an issue to track any initiative on the roadmap of Contour (Usually driven by new feature requests or [feature proposals](https://github.com/projectcontour/community/blob/master/GOVERNANCE.md#proposal-process)). For smaller enhancements, you can just open an issue to track that initiative or feature request. We work with and rely on community feedback to focus our efforts to improve Contour and maintain a healthy roadmap.
+Please open an issue to track any initiative on the roadmap of Contour (Usually driven by new feature requests or [feature proposals](https://github.com/projectcontour/community/blob/master/GOVERNANCE.md#proposal-process)).
+For smaller enhancements, you can just open an issue to track that initiative or feature request.
+We work with and rely on community feedback to focus our efforts to improve Contour and maintain a healthy roadmap.
 
 ### Current Roadmap
-The following table includes the current roadmap for Contour. If you have any questions or would like to contribute to Contour, please attend a [community meeting](https://projectcontour.io/community/) to discuss with our team. If you don't know where to start, we are always looking for contributors that will help us reduce technical, automation, and documentation debt.
-Please take the timelines & dates as proposals and goals. Priorities and requirements change based on community feedback, roadblocks encountered, community contributions, etc. If you depend on a specific item, we encourage you to attend community meetings to get updated status information, or help us deliver that feature by contributing to Contour.
+The following table includes the current roadmap for Contour.
+If you have any questions or would like to contribute to Contour, please attend a [community meeting](https://projectcontour.io/community/) to discuss with our team.
+If you don't know where to start, we are always looking for contributors that will help us reduce technical, automation, and documentation debt.
+Please take the timelines & dates as proposals and goals.
+Priorities and requirements change based on community feedback, roadblocks encountered, community contributions, etc.
+If you depend on a specific item, we encourage you to attend community meetings to get updated status information, or help us deliver that feature by contributing to Contour.
 
-`Last Updated: August 2022`
+`Last Updated: January 2023`
 
-|Theme|Description|Timeline|Issue|Notes|Will this be ported to Envoy Gateway?|
-|--|--|--|--|--|--|
-|Gateway API|Create a plan for v0.6.0|2022 H2| TBC|Make a plan for how to handle Gateway API v0.6.0 when it's released.|Envoy Gateway will track Gateway releases.|
-|Infrastructure|Replace Contour xDS code with go-control-plane as default|2023 H2|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)|There’s some work left to do, but this should be finished soon.These changes will also make Delta xDS available, which should help with wire transfer times and scalability.|The work we do here is directly used in Envoy Gateway; it only uses go-control-plane.|
-|Observability|Tracing support|Unknown|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|In order to build this support out, Contour’s ExtensionService CRD needs a redesign. The active maintainers will work on driving tracing support in the Gateway API and Envoy Gateway. If any Contour community members wish to pick up this work, the maintainers will help you by explaining the problem and what needs to be done, and then help to shepherd the PR through review.|Envoy Gateway will build this at some point, we need to figure out how to do it in Gateway API.|
-|Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server. We started this work, but the Oauth2 filter in Envoy is still very experimental and needs a lot of work. This work can’t proceed until significant work has been done on the Oauth2 filter.|This is definitely a roadmap item for Envoy Gateway.
-|Security|IP Block list|Unknown|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971)|The team will evaluate when we do this in Contour.|
+|Theme|Description|Timeline|Issue|Notes|
+|--|--|--|--|--|
+|Gateway API|Implement GRPCRoute|2023 H1|[projectcontour/contour#4820](https://github.com/projectcontour/contour/issues/4820)|Work has started on a design document for this feature.|
+|Gateway API|Support arbitrary number of Listeners per-Gateway|2023 H1|[4960](https://github.com/projectcontour/contour/issues/4960)|Will likely be required to stay conformant with Gateway API.|
+|Observability|Tracing support|2023 H1|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|Work has started on a design document for this feature.|
+|Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server. We started this work, but the Oauth2 filter in Envoy is still very experimental and needs a lot of work. This work can’t proceed until significant work has been done on the Oauth2 filter.|
+|Security|IP Block list|2023 H1|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971) and [projectcontour/contour#3693](https://github.com/projectcontour/contour/issues/3693)|Work has started on a design document for this feature.|
+|Infrastructure|Replace Contour xDS code with go-control-plane as default|2023 H2|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)|There’s some work left to do, but this should be finished soon.These changes will also make Delta xDS available, which should help with wire transfer times and scalability.|
 |New Use Case|UDP Support|Won't Do|[projectcontour/contour#1248](https://github.com/projectcontour/contour/issues/1248)|Contour is focused on Layer 7 HTTP Ingress, and supports Layer 4 only in service of that goal. Contour will not add UDP support.|
 
 
@@ -32,6 +44,7 @@ Please take the timelines & dates as proposals and goals. Priorities and require
 
 |Theme|Description|Timeline|Issue|Notes|
 |--|--|--|--|--|
+|Gateway API|Create a plan for v0.6.0|2022 H2| [projectcontour/contour#4738](https://github.com/projectcontour/contour/issues/4738)|Make a plan for how to handle Gateway API v0.6.0 when it's released.|
 |Operational|Contour with managed Envoys|2022 H1||Contour’s Gateway API implementation now allows for the dynamic creation of Envoy Daemonsets or Deployments, this functionality is included there.We were considering making this available outside of Gateway API, but the work involved is too prohibitive.|
 |Gateway APIs|Implement Gateway 0.5.0 API Support|2021 H2|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)|Contour will only support HTTPRoute and TLSRoute, the Layer 7 route objects. No support planned for TCPRoute and UDPRoute at this time.  Related issue that's on our radar - https://github.com/projectcontour/contour/issues/3367|
 |Deployment|Contour Operator GA|Won't do|[projectcontour/contour-operator#205](https://github.com/projectcontour/contour-operator/issues/205)|The Operator will not be moved to GA. It’s now in maintenance mode, and will have minimal updates done to keep it working with new Contour releases until we say otherwise. Once Envoy Gateway is available and ready for use, we strongly encourage Operator users to move to it for your dynamic ingress traffic routing needs.|
