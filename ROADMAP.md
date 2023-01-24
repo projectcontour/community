@@ -31,11 +31,11 @@ If you depend on a specific item, we encourage you to attend community meetings 
 |Theme|Description|Timeline|Issue|Notes|
 |--|--|--|--|--|
 |Gateway API|Implement GRPCRoute|2023 H1|[projectcontour/contour#4820](https://github.com/projectcontour/contour/issues/4820)|Work has started on a design document for this feature.|
-|Gateway API|Support arbitrary number of Listeners per-Gateway|2023 H1|[4960](https://github.com/projectcontour/contour/issues/4960)|Will likely be required to stay conformant with Gateway API.|
+|Gateway API|Support arbitrary number of Listeners per-Gateway|2023 H1|[projectcontour/contour#4960](https://github.com/projectcontour/contour/issues/4960)|Will likely be required to stay conformant with Gateway API.|
 |Observability|Tracing support|2023 H1|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|Work has started on a design document for this feature.|
-|Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server. We started this work, but the Oauth2 filter in Envoy is still very experimental and needs a lot of work. This work can’t proceed until significant work has been done on the Oauth2 filter.|
 |Security|IP Block list|2023 H1|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971) and [projectcontour/contour#3693](https://github.com/projectcontour/contour/issues/3693)|Work has started on a design document for this feature.|
 |Infrastructure|Replace Contour xDS code with go-control-plane as default|2023 H2|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)|There’s some work left to do, but this should be finished soon.These changes will also make Delta xDS available, which should help with wire transfer times and scalability.|
+|Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server. We started this work, but the Oauth2 filter in Envoy is still very experimental and needs a lot of work. This work can’t proceed until significant work has been done on the Oauth2 filter.|
 |New Use Case|UDP Support|Won't Do|[projectcontour/contour#1248](https://github.com/projectcontour/contour/issues/1248)|Contour is focused on Layer 7 HTTP Ingress, and supports Layer 4 only in service of that goal. Contour will not add UDP support.|
 
 
