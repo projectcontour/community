@@ -26,15 +26,14 @@ Please take the timelines & dates as proposals and goals.
 Priorities and requirements change based on community feedback, roadblocks encountered, community contributions, etc.
 If you depend on a specific item, we encourage you to attend community meetings to get updated status information, or help us deliver that feature by contributing to Contour.
 
-`Last Updated: January 2023`
+`Last Updated: April 2023`
 
 |Theme|Description|Timeline|Issue|Notes|
 |--|--|--|--|--|
-|Gateway API|Implement GRPCRoute|2023 H1|[projectcontour/contour#4820](https://github.com/projectcontour/contour/issues/4820)|Work has started on a design document for this feature.|
 |Gateway API|Support arbitrary number of Listeners per-Gateway|2023 H1|[projectcontour/contour#4960](https://github.com/projectcontour/contour/issues/4960)|Will likely be required to stay conformant with Gateway API.|
-|Observability|Tracing support|2023 H1|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|Work has started on a design document for this feature.|
-|Security|IP Block list|2023 H1|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971) and [projectcontour/contour#3693](https://github.com/projectcontour/contour/issues/3693)|Work has started on a design document for this feature.|
 |Infrastructure|Replace Contour xDS code with go-control-plane as default|2023 H2|[projectcontour/contour#2134](https://github.com/projectcontour/contour/issues/2134)|There’s some work left to do, but this should be finished soon.These changes will also make Delta xDS available, which should help with wire transfer times and scalability.|
+|Observability|Improve observability of Contour (the control plane)|2023 H2|[metrics label](https://github.com/projectcontour/contour/labels/area%2Fmetrics)|Additional metrics, logging, etc. will improve our and users' ability to troubleshoot bugs, performance issues and scale issues|
+|Scale|Improve Contour's performance and reduce resource utilization at scale|2023 H2|[performance label](https://github.com/projectcontour/contour/labels/performance)|Ensure Contour operates well in large clusters. Ideally, automated testing is added to help prevent future regressions as well.|
 |Security|Add OIDC support to contour|Unknown|[projectcontour/contour#2664](https://github.com/projectcontour/contour/issues/2664)|This covers work to pull OIDC support directly into Contour, without requiring running an external auth server. We started this work, but the Oauth2 filter in Envoy is still very experimental and needs a lot of work. This work can’t proceed until significant work has been done on the Oauth2 filter.|
 |New Use Case|UDP Support|Won't Do|[projectcontour/contour#1248](https://github.com/projectcontour/contour/issues/1248)|Contour is focused on Layer 7 HTTP Ingress, and supports Layer 4 only in service of that goal. Contour will not add UDP support.|
 
@@ -44,6 +43,9 @@ If you depend on a specific item, we encourage you to attend community meetings 
 
 |Theme|Description|Timeline|Issue|Notes|
 |--|--|--|--|--|
+|Security|IP filtering|2023 H1|[projectcontour/contour#2971](https://github.com/projectcontour/contour/issues/2971) and [projectcontour/contour#3693](https://github.com/projectcontour/contour/issues/3693)|Implementation PR: [projectcontour/contour#5008](https://github.com/projectcontour/contour/pull/5008)|
+|Observability|Tracing support|2023 H1|[projectcontour/contour#399](https://github.com/projectcontour/contour/issues/399)|Implementation PR: [projectcontour/contour#5043](https://github.com/projectcontour/contour/pull/5043)|
+|Gateway API|Implement GRPCRoute|2023 H1|[projectcontour/contour#4820](https://github.com/projectcontour/contour/issues/4820)|Implemented in [projectcontour/contour#5114](https://github.com/projectcontour/contour/pull/5114)|
 |Gateway API|Create a plan for v0.6.0|2022 H2| [projectcontour/contour#4738](https://github.com/projectcontour/contour/issues/4738)|Make a plan for how to handle Gateway API v0.6.0 when it's released.|
 |Operational|Contour with managed Envoys|2022 H1||Contour’s Gateway API implementation now allows for the dynamic creation of Envoy Daemonsets or Deployments, this functionality is included there.We were considering making this available outside of Gateway API, but the work involved is too prohibitive.|
 |Gateway APIs|Implement Gateway 0.5.0 API Support|2021 H2|[projectcontour/contour#2287](https://github.com/projectcontour/contour/issues/2287)|Contour will only support HTTPRoute and TLSRoute, the Layer 7 route objects. No support planned for TCPRoute and UDPRoute at this time.  Related issue that's on our radar - https://github.com/projectcontour/contour/issues/3367|
