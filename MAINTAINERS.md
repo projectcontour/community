@@ -7,41 +7,36 @@ describes governance guidelines and maintainer responsibilities.
 
 | Maintainer | GitHub ID | Affiliation |
 | --------------- | --------- | ----------- |
-| Steve Sloka | [stevesloka](https://github.com/stevesloka) | [Outerbase](https://github.com/outerbase/) |
-| Steve Kriss | [skriss](https://github.com/skriss) | [VMware](https://www.github.com/vmware/) |
-| Alex Xu | [xaleeks](https://github.com/xaleeks) | [VMware](https://www.github.com/vmware/) |
+| Sunjay Bhatia | [sunjayBhatia](https://github.com/sunjayBhatia)| [Broadcom](https://github.com/broadcom) |
+| Steve Kriss | [skriss](https://github.com/skriss) | [Broadcom](https://github.com/broadcom) |
 | Tero Saarni | [tsaarni](https://github.com/tsaarni)| [Ericsson](https://github.com/Ericsson) |
-| Sunjay Bhatia | [sunjayBhatia](https://github.com/sunjayBhatia)| [VMware](https://www.github.com/vmware/) |
 
 ## Emeritus Maintainers
-* Michael Michael ([michmike](https://www.github.com/michmike/))
 * Dave Cheney ([davecheney](https://github.com/davecheney))
-* James Peach ([jpeach](https://github.com/jpeach))
+* Steve Sloka ([stevesloka](https://github.com/stevesloka))
 * Daneyon Hansen ([danehans](https://github.com/danehans))
+* Michael Michael ([michmike](https://www.github.com/michmike/))
+* James Peach ([jpeach](https://github.com/jpeach))
 * Nick Young ([youngnick](https://github.com/youngnick))
+
+## Reviewers
+
+| Reviewer | GitHub ID | Affiliation |
+| --------------- | --------- | ----------- |
+| Clayton Gonsalves | [clayton-gonsalves](https://github.com/clayton-gonsalves)| [reddit](https://github.com/reddit) |
+| Sotiris Nanopoulos | [davinci26](https://github.com/davinci26)| [reddit](https://github.com/reddit) |
 
 ## SIG Community
 
 | Owner | GitHub ID | Affiliation |
 | --------------- | --------- | ----------- |
-| Orlin Vasilev | [OrlinVasilev](https://github.com/OrlinVasilev) | [VMware](https://www.github.com/vmware/) | 
-| Alex Xu | [xaleeks](https://github.com/xaleeks) | [VMware](https://www.github.com/vmware/) | 
-| Nigel Brown | [pnbrown](https://github.com/pnbrown) | [VMware](https://www.github.com/vmware/) | 
-
-## SIG Docs
-
-| Owner | GitHub ID | Affiliation |
-| --------------- | --------- | ----------- |
-| Orlin Vasilev | [OrlinVasilev](https://github.com/OrlinVasilev) | [VMware](https://www.github.com/vmware/) |
-| Kay ORiordan | [kcoriordan](https://github.com/kcoriordan) | [VMware](https://www.github.com/vmware/) |
+| Nigel Brown | [pnbrown](https://github.com/pnbrown) | [Intuit](https://github.com/intuit) | 
 
 ## Contour Core Contributors & Stakeholders
 
 | Contour Feature Area | Lead |
 | ----------------------------- | :---------------------: |
 | Technical Lead | Steve Kriss (skriss) |
-| Multi-Cluster Ingress | Steve Sloka (stevesloka) |
 | Test Infrastructure | Steve Kriss (skriss), Sunjay Bhatia (sunjayBhatia) |
-| Community Management | Orlin Vasilev (OrlinVasilev) |
 | Community Management | Nigel Brown (pnbrown) |
 | Product Management | Alex Xu (xaleeks) |
