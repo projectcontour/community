@@ -9,12 +9,11 @@ This document defines the project governance for Contour.
 ## Code Repositories
 
 All the code repositories owned by the Project Contour GitHub Organization are
-governed by Contour community and maintained under the `ProjectContour` namespace.
+governed by Contour community and maintained under the `projectcontour` namespace.
 The following repos are the most noteworthy:
 
-* **[Contour](https://github.com/projectcontour/contour):** Main Contour codebase.
+* **[contour](https://github.com/projectcontour/contour):** Main Contour codebase.
 * **[community](https://github.com/projectcontour/community):** Used to store community-related material–e.g., proposals, presentation slides, governance documents, community meeting minutes, etc.
-* **[contour-operator](https://github.com/projectcontour/contour-operator):** The Contour Operator is a tool for installing and managing Contour.
 
 ## Community Roles
 
@@ -82,11 +81,39 @@ this can also occur through the decision-making process outlined below.
 
 SIGs oversee and coordinate the interests and needs of end users and projects in a particular area. By definition, they are long-lived groups that coordinate their work with the maintainers team and are led primarily by recognized experts in the relevant field and supported by other contributors.
 
+## Procedures and Decision-Making
+
 ### Supermajority
 
 A supermajority is defined as two-thirds of members in the group.
 A supermajority of [Maintainers](#maintainers) is required for certain
 decisions as outlined above. Voting on decisions can happen on the mailing list, GitHub, Slack, email, or via a voting service, when appropriate. Maintainers can either vote "agree, yes, +1", "disagree, no, -1", or "abstain". A vote passes when supermajority is met. An abstain vote equals not voting at all.
+
+### Lazy Consensus
+
+To maintain velocity in a project as busy as Contour, the concept of [Lazy
+Consensus](https://contribute.cncf.io/resources/glossary/#lazy-consensus) is practiced. Ideas
+and / or proposals should be shared by maintainers via
+GitHub with the appropriate maintainer groups (e.g.,
+`@projectcontour/maintainers`) tagged. Out of respect for other contributors,
+major changes should also be accompanied by a ping on Slack or a note on the
+Contour dev mailing list as appropriate. Author(s) of proposal, Pull Requests,
+issues, etc. will give a time period of no less than five (5) working days for
+comment and remain cognizant of popular observed world holidays.
+
+Other maintainers may chime in and request additional time for review, but
+should remain cognizant of blocking progress and abstain from delaying
+progress unless absolutely needed. The expectation is that blocking progress
+is accompanied by a guarantee to review and respond to the relevant action(s)
+(proposals, PRs, issues, etc.) in short order.
+
+Lazy Consensus is practiced for all projects in the `projectcontour` org, including
+the main project repository, community-driven sub-projects, and the community
+repo that includes proposals and governing documents.
+
+Lazy consensus does _not_ apply to the process of:
+
+* Removal of maintainers from Contour
 
 ### Decision Making
 
@@ -101,11 +128,11 @@ agree, the company's vote is determined by a supermajority of voters from that
 company. If no supermajority is achieved, the company is considered to have
 abstained.
 
-## Proposal Process
+### Proposal Process
 
 One of the most important aspects in any open source community is the concept
 of proposals. Large changes to the codebase and / or new features should be
-preceded by a proposal in our community repo. This process allows for all
+preceded by a proposal in the `contour` repo. This process allows for all
 members of the community to weigh in on the concept (including the technical
 details), share their comments and ideas, and offer to help. It also ensures
 that members are not duplicating work or inadvertently stepping on toes by
@@ -119,14 +146,14 @@ interested in implementing the proposal should be either deeply engaged in the
 proposal process or be an author of the proposal.
 
 The proposal should be documented as a separated markdown file pushed to the root of the 
-`design` folder in the [Contour](https://github.com/projectcontour/contour/tree/master/design)
+`design` folder in the [Contour](https://github.com/projectcontour/contour/tree/main/design)
 repository via PR. The name of the file should follow the name pattern `<short
 meaningful words joined by '-'>_design.md`, e.g:
 `listener-design.md`.
 
-Use the [Proposal Template](https://github.com/projectcontour/contour/blob/master/design/design-document-tmpl.md) as a starting point.
+Use the [Proposal Template](https://github.com/projectcontour/contour/blob/main/design/design-document-tmpl.md) as a starting point.
 
-### Proposal Lifecycle
+#### Proposal Lifecycle
 
 The proposal PR can be marked with different status labels to represent the
 status of the proposal:
@@ -135,32 +162,6 @@ status of the proposal:
 * **Reviewing**: Proposal is under review and discussion.
 * **Accepted**: Proposal has been reviewed and is accepted (either by consensus or through a vote).
 * **Declined**: Proposal has been reviewed and was rejected (either by consensus or through a vote).
-
-### Lazy Consensus
-
-To maintain velocity in a project as busy as Contour, the concept of [Lazy
-Consensus](http://en.osswiki.info/concepts/lazy_consensus) is practiced. Ideas
-and / or proposals should be shared by maintainers via
-GitHub with the appropriate maintainer groups (e.g.,
-`@ProjectContour/maintainers`) tagged. Out of respect for other contributors,
-major changes should also be accompanied by a ping on Slack or a note on the
-Contour dev mailing list as appropriate. Author(s) of proposal, Pull Requests,
-issues, etc.  will give a time period of no less than five (5) working days for
-comment and remain cognizant of popular observed world holidays.
-
-Other maintainers may chime in and request additional time for review, but
-should remain cognizant of blocking progress and abstain from delaying
-progress unless absolutely needed. The expectation is that blocking progress
-is accompanied by a guarantee to review and respond to the relevant action(s)
-(proposals, PRs, issues, etc.) in short order.
-
-Lazy Consensus is practiced for all projects in the `ProjectContour` org, including
-the main project repository, community-driven sub-projects, and the community
-repo that includes proposals and governing documents.
-
-Lazy consensus does _not_ apply to the process of:
-
-* Removal of maintainers from Contour
 
 ## Updating Governance
 
