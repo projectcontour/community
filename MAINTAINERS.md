@@ -25,6 +25,7 @@ describes governance guidelines and maintainer responsibilities.
 | --------------- | --------- | ----------- |
 | Clayton Gonsalves | [clayton-gonsalves](https://github.com/clayton-gonsalves)| [reddit](https://github.com/reddit) |
 | Sotiris Nanopoulos | [davinci26](https://github.com/davinci26)| [reddit](https://github.com/reddit) |
+| Gang Liu | [izturn](https://github.com/izturn)| [daocloud](https://github.com/daocloud/) |
 
 ## SIG Community
 
