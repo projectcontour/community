@@ -8,7 +8,6 @@ describes governance guidelines and maintainer responsibilities.
 | Maintainer | GitHub ID | Affiliation |
 | --------------- | --------- | ----------- |
 | Sunjay Bhatia | [sunjayBhatia](https://github.com/sunjayBhatia)| [Broadcom](https://github.com/broadcom) |
-| Steve Kriss | [skriss](https://github.com/skriss) | [Broadcom](https://github.com/broadcom) |
 | Tero Saarni | [tsaarni](https://github.com/tsaarni)| [Ericsson](https://github.com/Ericsson) |
 
 ## Emeritus Maintainers
@@ -18,6 +17,7 @@ describes governance guidelines and maintainer responsibilities.
 * Michael Michael ([michmike](https://www.github.com/michmike/))
 * James Peach ([jpeach](https://github.com/jpeach))
 * Nick Young ([youngnick](https://github.com/youngnick))
+* Steve Kriss ([skriss](https://github.com/skriss))
 
 ## Reviewers
 
@@ -37,7 +37,7 @@ describes governance guidelines and maintainer responsibilities.
 
 | Contour Feature Area | Lead |
 | ----------------------------- | :---------------------: |
-| Technical Lead | Steve Kriss (skriss) |
-| Test Infrastructure | Steve Kriss (skriss), Sunjay Bhatia (sunjayBhatia) |
+| Technical Lead | Sunjay Bhatia (sunjayBhatia) |
+| Test Infrastructure | Sunjay Bhatia (sunjayBhatia) |
 | Community Management | Nigel Brown (pnbrown) |
 | Product Management | Alex Xu (xaleeks) |
