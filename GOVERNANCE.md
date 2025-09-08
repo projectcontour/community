@@ -14,6 +14,7 @@ The following repos are the most noteworthy:
 
 * **[contour](https://github.com/projectcontour/contour):** Main Contour codebase.
 * **[community](https://github.com/projectcontour/community):** Used to store community-related material–e.g., proposals, presentation slides, governance documents, community meeting minutes, etc.
+* **[helm-charts](https://github.com/projectcontour/helm-charts):** Helm charts for deploying Contour.
 
 ## Community Roles
 
@@ -24,6 +25,7 @@ All of the below roles share the responsibility to abide by the Code of Conduct 
 * **Reviewer:** Review contributions from other members.
 * **Maintainers**: The Contour project leaders. They are responsible for the overall health and direction of the project; final reviewers of PRs and responsible for releases. 
 * **SIG members/owner**: Members of a specific SIG are responsible for the work within that SIG topic, and SIG owners are responsible for driving the efforts within a SIG.
+* **Helm chart maintainers**: Responsible for maintaining the Helm charts for deploying Contour.
 
 ### Reviewer
 Reviewers are able to review code for quality and correctness on some part of a subproject. They are knowledgeable about both the codebase and software engineering principles.
@@ -80,6 +82,10 @@ this can also occur through the decision-making process outlined below.
 ### SIGs and SIG-owner
 
 SIGs oversee and coordinate the interests and needs of end users and projects in a particular area. By definition, they are long-lived groups that coordinate their work with the maintainers team and are led primarily by recognized experts in the relevant field and supported by other contributors.
+
+### Helm Chart Maintainers
+
+Helm chart maintainers are responsible for the maintenance and release of Contour Helm charts in the helm-charts repo. Maintenance responsibilities include timely updates coordinated with Contour releases, responding to user issues and PRs, and supporting release machinery for cutting Helm chart releases.
 
 ## Procedures and Decision-Making
 
